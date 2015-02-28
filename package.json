@@ -1,0 +1,26 @@
+{
+  "name": "strict-loader",
+  "version": "0.1.0",
+  "description": "Adds `use strict;` in the beginning of each source",
+  "keywords": [
+    "webpack",
+    "loader",
+    "strict",
+    "use strict"
+  ],
+  "homepage": "https://github.com/mistadikay/strict-loader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mistadikay/strict-loader.git"
+  },
+  "author": {
+    "name": "mistadikay",
+    "email": "koltsov.d@gmail.com",
+    "url": "https://github.com/mistadikay"
+  },
+  "main": "index.js",
+  "peerDependencies": {
+    "webpack": "1.6.x"
+  },
+  "license": "MIT"
+}
