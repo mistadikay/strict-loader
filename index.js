@@ -3,7 +3,7 @@
 var OriginalSource = require('webpack/lib/OriginalSource');
 
 module.exports = function(source, sourceMap){
-    var injection = '"use strict";\n\n';
+    var injection = '\'use strict\';\n\n';
     var injectedSource = injection + source;
     var identifier;
     var origMap;
