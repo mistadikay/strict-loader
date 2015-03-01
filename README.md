@@ -2,6 +2,8 @@
 
 > Adds `use strict;` in the beginning of each source
 
+Inspired by this gist https://gist.github.com/loganfsmyth/6f8520c7c96f61f0a5b8
+
 ## Install
 
 ```
