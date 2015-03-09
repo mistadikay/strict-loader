@@ -20,7 +20,7 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "webpack": "1.6.x"
+    "webpack": "^1.6.0"
   },
   "license": "MIT"
 }
