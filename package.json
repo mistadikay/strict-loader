@@ -26,5 +26,11 @@
   "peerDependencies": {
     "webpack": "^1.6.0"
   },
+  "devDependencies": {
+    "webpack": "^1.6.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/webpack --config test/webpack.conf.js"
+  },
   "license": "MIT"
 }
