@@ -1,25 +1,32 @@
 'use strict';
 
-var OriginalSource = require('webpack/lib/OriginalSource');
+var loaderUtils = require('loader-utils');
+var SourceMap = require('source-map');
 
-module.exports = function(source, sourceMap){
-    var injection = '\'use strict\';\n\n';
-    var injectedSource = injection + source;
-    var identifier;
-    var origMap;
+var SourceNode = SourceMap.SourceNode;
+var SourceMapConsumer = SourceMap.SourceMapConsumer;
+var prefix = '\'use strict\';\n\n';
 
+// used https://github.com/webpack/imports-loader/ as an example
+module.exports = function(source, map) {
     if (this.cacheable) {
         this.cacheable();
     }
 
-    if (sourceMap) {
-        identifier = this._module.identifier();
-        origMap = new OriginalSource(source, identifier, sourceMap);
+    if (map) {
+        var currentRequest = loaderUtils.getCurrentRequest(this);
+        var node = SourceNode.fromStringWithSourceMap(source, new SourceMapConsumer(map));
 
-        origMap.node().prepend(injection);
+        node.prepend(prefix);
 
-        return this.callback(null, injectedSource, origMap.map());
+        var result = node.toStringWithSourceMap({
+            file: currentRequest
+        });
+
+        this.callback(null, result.code, result.map.toJSON());
+
+        return;
     }
 
-    return injectedSource;
+    return prefix + source;
 };
