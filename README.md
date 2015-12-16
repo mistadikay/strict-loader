@@ -37,6 +37,15 @@ module.exports = {
 };
 ```
 
+### demo
+
+```
+npm install
+npm start
+```
+
+Open `http://localhost:3000/` in browser — you should see text `strict-loader is working`
+
 ## License
 
 MIT
