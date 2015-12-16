@@ -39,7 +39,7 @@ exports.demo = function() {
         ]
     };
 
-    return new Promise((resolve, reject) => {
+    return new Promise(function(resolve, reject) {
         var server = new WebpackDevServer(webpack(config), {
             hot: true,
             stats: {
@@ -52,7 +52,7 @@ exports.demo = function() {
             }
         });
 
-        server.listen('3000', err => {
+        server.listen('3000', function(err) {
             if (err) {
                 return reject(err);
             }
