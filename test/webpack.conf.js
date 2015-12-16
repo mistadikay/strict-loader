@@ -1,7 +1,6 @@
 var path = require('path');
 
 module.exports = {
-    cache: true,
     stats: {
         colors: true,
         reasons: false
@@ -16,26 +15,13 @@ module.exports = {
         './test/index'
     ],
     module: {
-        preLoaders: [
+        loaders: [
             {
                 test: /\.js$/,
                 loaders: [
                     './index.js'
                 ]
             }
-        // ],
-        // loaders: [
-        //     {
-        //         test: /\.json$/,
-        //         loader: 'json'
-        //     },
-        //     {
-        //         test: /\.css$/,
-        //         loader: ExtractTextPlugin.extract(
-        //             'style',
-        //             'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
-        //         )
-        //     }
         ]
     }
 };
