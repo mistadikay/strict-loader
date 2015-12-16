@@ -27,14 +27,18 @@
     "webpack": "^1.6.0"
   },
   "devDependencies": {
+    "husky": "0.10.x",
     "start": "1.1.x",
+    "eslint": "1.10.x",
     "webpack": "^1.6.0",
     "webpack-dev-server": "1.14.x",
     "html-webpack-plugin": "1.7.x"
   },
   "scripts": {
     "task": "node node_modules/.bin/start tasks/",
-    "start": "npm run task demo"
+    "start": "npm run task demo",
+    "precommit": "npm test",
+    "test": "npm run task eslint"
   },
   "license": "MIT"
 }

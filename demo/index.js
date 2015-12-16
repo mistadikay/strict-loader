@@ -1,3 +1,4 @@
+/*eslint-disable*/
 try {
     test = 'strict-loader is not working';
 
@@ -5,3 +6,4 @@ try {
 } catch (err) {
     document.write('strict-loader is working');
 }
+/*eslint-enable*/

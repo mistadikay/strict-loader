@@ -1,4 +1,29 @@
-exports.demo = function() {
+exports.eslint = function eslint() {
+    var CLIEngine = require('eslint').CLIEngine;
+
+    return new Promise(function(resolve, reject) {
+        var cli = new CLIEngine();
+        var report = cli.executeOnFiles([ '.' ]);
+        var formatter = cli.getFormatter();
+
+        if (report.errorCount > 0 || report.warningCount > 0) {
+            console.log(formatter(report.results));
+        }
+
+        if (report.errorCount === 0 && report.warningCount === 0) {
+            return resolve('¯\\_(ツ)_/¯');
+        }
+
+        if (report.errorCount > 0) {
+            return reject('(╯°□°)╯︵┻━┻');
+        }
+
+        resolve();
+    });
+};
+
+
+exports.demo = function demo() {
     var path = require('path');
     var webpack = require('webpack');
     var WebpackDevServer = require('webpack-dev-server');
@@ -14,6 +39,7 @@ exports.demo = function() {
             publicPath: '/',
             filename: 'bundle.js'
         },
+        devtool: '#source-map',
         entry: [
             './demo/index'
         ],
@@ -60,4 +86,4 @@ exports.demo = function() {
             resolve('http://localhost:3000/webpack-dev-server/');
         });
     });
-}
+};
