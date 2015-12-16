@@ -1,6 +1,6 @@
 {
   "name": "strict-loader",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Adds `use strict;` in the beginning of each source",
   "keywords": [
     "webpack",
