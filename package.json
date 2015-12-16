@@ -8,6 +8,10 @@
     "strict",
     "use strict"
   ],
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
   "homepage": "https://github.com/mistadikay/strict-loader",
   "repository": {
     "type": "git",
