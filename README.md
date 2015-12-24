@@ -1,6 +1,10 @@
 # strict-loader
 
-[![npm version](https://badge.fury.io/js/strict-loader.svg)](http://badge.fury.io/js/strict-loader)
+[![npm](https://img.shields.io/npm/v/strict-loader.svg?style=flat-square)](https://www.npmjs.com/package/strict-loader)
+[![downloads](https://img.shields.io/npm/dm/strict-loader.svg?style=flat-square)](https://www.npmjs.com/package/strict-loader)
+[![travis](http://img.shields.io/travis/mistadikay/strict-loader.svg?style=flat-square)](https://travis-ci.org/mistadikay/strict-loader)
+[![coverage](http://img.shields.io/coveralls/mistadikay/strict-loader/master.svg?style=flat-square)](https://coveralls.io/r/mistadikay/strict-loader)
+[![deps](http://img.shields.io/david/mistadikay/strict-loader.svg?style=flat-square)](https://david-dm.org/mistadikay/strict-loader)
 
 > Adds `use strict;` in the beginning of each source
 
