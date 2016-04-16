@@ -23,9 +23,6 @@
     "url": "https://github.com/mistadikay"
   },
   "main": "index.js",
-  "peerDependencies": {
-    "webpack": "^1.6.0"
-  },
   "dependencies": {
     "loader-utils": "0.2.x",
     "source-map": "0.5.x"
