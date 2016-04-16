@@ -31,12 +31,12 @@
     "source-map": "0.5.x"
   },
   "devDependencies": {
-    "husky": "0.10.x",
+    "husky": "0.11.x",
     "start": "1.2.x",
     "eslint": "1.10.x",
-    "webpack": "^1.6.0",
+    "webpack": ">=2.1.0-beta.5",
     "webpack-dev-server": "1.14.x",
-    "html-webpack-plugin": "1.7.x"
+    "html-webpack-plugin": "2.15.x"
   },
   "scripts": {
     "task": "node node_modules/.bin/start tasks/",
