@@ -7,9 +7,9 @@
 
 > Adds `use strict;` in the beginning of each source
 
-Inspired by this gist https://gist.github.com/loganfsmyth/6f8520c7c96f61f0a5b8
+:heavy_check_mark: Webpack 2 compatible
 
-Please note that if you use Babel, the strict transformer [automatically places](https://babeljs.io/docs/advanced/transformers/other/strict/) a "use strict"; directive at the top of your files. In this case you don't need strict-loader.
+Please note that if you use Babel, the strict transformer [automatically places](https://babeljs.io/docs/plugins/transform-strict-mode/) a "use strict"; directive at the top of your files. In this case you don't need strict-loader.
 
 ## Install
 
