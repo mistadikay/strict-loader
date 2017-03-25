@@ -24,7 +24,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "loader-utils": "0.2.x",
+    "loader-utils": "^1.1.0",
     "source-map": "0.5.x"
   },
   "devDependencies": {
