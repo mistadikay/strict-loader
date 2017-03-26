@@ -1,6 +1,6 @@
 {
   "name": "strict-loader",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Adds `use strict;` in the beginning of each source",
   "keywords": [
     "webpack",
@@ -17,11 +17,7 @@
     "type": "git",
     "url": "https://github.com/mistadikay/strict-loader.git"
   },
-  "author": {
-    "name": "mistadikay",
-    "email": "koltsov.d@gmail.com",
-    "url": "https://github.com/mistadikay"
-  },
+  "author": "Denis Koltsov <iam@mistadikay.com> (https://mistadikay.com/)",
   "main": "index.js",
   "dependencies": {
     "esprima": "^3.1.3",
