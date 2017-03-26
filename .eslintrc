@@ -9,7 +9,3 @@
     fp/no-loops: 0
     vars-on-top: 0
     no-plusplus: 0
-    indent:
-      - 2
-      - 4
-      - SwitchCase: 1
