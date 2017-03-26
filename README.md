@@ -40,6 +40,12 @@ module.exports = {
 };
 ```
 
+### Options
+
+#### `generateSourceMapFromTokens`
+
+Generate source map from tokens using esprima. See [#8](https://github.com/mistadikay/strict-loader/pull/8) for details.
+
 ### demo
 
 ```
