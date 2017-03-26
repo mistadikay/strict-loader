@@ -48,7 +48,7 @@ exports.demo = function demo() {
                 {
                     test: /\.js$/,
                     loaders: [
-                        './index.js'
+                        './index.js?generateSourceMapFromTokens'
                     ]
                 }
             ]
